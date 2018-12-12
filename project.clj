@@ -15,7 +15,8 @@
   :figwheel {:server-port 3450}
   :plugins [[lein-npm "0.6.1"]
             [lein-figwheel "0.5.11"]
-            [lein-cljsbuild "1.1.3"]]
+            [lein-cljsbuild "1.1.3"]
+            [lein-doo "0.1.7"]]
   :npm {
         :dependencies [[xml2js "0.4.17"]
                        [request "2.74.0"]]
@@ -37,6 +38,17 @@
                                    :parallel-build true
                                    :source-map true}}
 
+                       {:id "test"
+                        :source-paths[ "src/main/clojure" "src/test/clojure"]
+                        :compiler {
+                                   :main eginez.calvin.test-runner
+                                   :output-to "out/test.js"
+                                   :target :nodejs
+                                   :output-dir "out/test"
+                                   :optimizations :none
+                                   :parallel-build true
+                                   :source-map true}
+                        }
                        {:id "prod"
                         :source-paths ["src/main/clojure"]
                         :compiler {

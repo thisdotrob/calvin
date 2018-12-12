@@ -107,3 +107,9 @@ Calvin uses Figwheel for interactive development:
      lein figwheel
      node out/dev/figwheel-server.js
 
+## Running tests
+
+```
+lein deps
+lein doo node test
+```
