@@ -7,7 +7,7 @@
             [cljs.core.async :refer [put! take! chan <! >!] :as async]
             [cljs.pprint :as pprint]
             [cljs.analyzer :as ana]
-            [eginez.huckleberry.core :as hb]
+            [thisdotrob.huckleberry.core :as hb]
             [cljs.reader :as reader]))
 
 (def fs (nodejs/require "fs"))

@@ -1,4 +1,4 @@
-(defproject calvin "0.1.0"
+(defproject calvin "0.1.1"
   :description "minimalistic clojurescript only build tool"
   :url "https://github.com/eginez/calvin"
   :license {:name "Eclipse Public License"
@@ -6,7 +6,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.293"]
                  [org.clojure/tools.cli "0.3.5"]
-                 [org.clojars.eginez/huckleberry "0.2.0"]
+                 [org.clojars.thisdotrob/huckleberry "0.2.2"]
                  [andare "0.4.0"]]
   :source-paths ["src/main/clojure" "target/classes"]
   :test-paths ["src/test/clojure"]
